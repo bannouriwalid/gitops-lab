@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: gitops-app
-          image: walidbannouri/gitops-app:v1
+          image: walidbannouri/gitops-app:v2
           imagePullPolicy: IfNotPresent
           env:
             - name: MONGO_URI
@@ -25,3 +25,6 @@ spec:
                   key: MONGO_URI
           ports:
             - containerPort: 3000
+
+
+
